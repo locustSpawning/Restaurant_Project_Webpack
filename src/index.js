@@ -1,5 +1,7 @@
 import _ from 'lodash';
-import Images from '../images';  //figure out importing images from a folder
+import './style.css';
+import Macarons from './macarons2.jpg';  
+
 
 console.log('whaaat?');
 
@@ -9,6 +11,9 @@ var Contact;
 var Greeting;
 var Description;
 var openingImage;
+var Hours;
+var Location;
+const content = document.getElementById('content');
 
 
 function addButton(){
@@ -19,15 +24,15 @@ function addButton(){
 
 Home = addButton();
 Home.innerHTML = (['Home']);
-document.body.appendChild(Home);
+content.appendChild(Home);
 
 Menu = addButton();
 Menu.innerHTML = (['Menu']);
-document.body.appendChild(Menu);
+content.appendChild(Menu);
 
 Contact = addButton();
 Contact.innerHTML = (['Contact']);
-document.body.appendChild(Contact);
+content.appendChild(Contact);
 
 
 
@@ -43,18 +48,26 @@ function addHeader3(){
 
 Greeting = addHeader1();
 Greeting.innerHTML = (['Mademoiselle Macaron']);
-document.body.appendChild(Greeting);
+content.appendChild(Greeting);
 
 Description = addHeader3();
 Description.innerHTML = (['Authentic French bakery ~ made with love']);
-document.body.appendChild(Description);
+content.appendChild(Description);
 
 
-function addImage(){
-    const img = document.createElement('image');
-    return img;
+openingImage = new Image();
+openingImage.src = Macarons;
+content.appendChild(openingImage);
+
+function addP(){
+    const p = document.createElement('p');
+    return p;
 }
 
-openingImage = addImage();
-openingImage.src = (['../images/macarons.jpg']);
-document.body.appendChild(openingImage);
+Hours = addP();
+Hours.innerHTML = (['Hours<br>Thursday-Saturday<br>11am-5pm Sundays-Private Events']);
+content.appendChild(Hours);
+
+Location = addP();
+Location.innerHTML = (['Location<br>La Mademoiselle Macaron<br>41 S Main Stree<br>Mullica Hill, NJ 08062']);
+content.appendChild(Location);
