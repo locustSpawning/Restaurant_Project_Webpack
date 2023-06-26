@@ -3,8 +3,6 @@ import './style.css';
 import Macarons from './macarons2.jpg';  
 
 
-console.log('eh?');
-
 var Home;
 var Menu;
 var Contact;
@@ -71,6 +69,8 @@ content.appendChild(Hours);
 Location = addP();
 Location.innerHTML = (['Location<br>La Mademoiselle Macaron<br>41 S Main Stree<br>Mullica Hill, NJ 08062']);
 content.appendChild(Location);
+
+
 
 
 export default loadHome;
