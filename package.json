@@ -8,7 +8,7 @@
     "build": "webpack"
   },
   "keywords": [],
-  "author": "",
+  "author": "chelsea leonhardt",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",

@@ -82,7 +82,7 @@ function createFooter(){
     footer.classList.add('footer');
 
     const copyright = document.createElement('p');
-    copyright.textContent = 'Copyright © ${new Date().getFullYear()} chelsea leonhardt';
+    copyright.textContent = `Copyright © ${new Date().getFullYear()} chelsea leonhardt`;
 
     const githubLink = document.createElement('a');
     githubLink.href = 'https://github.com/locustSpawning';
