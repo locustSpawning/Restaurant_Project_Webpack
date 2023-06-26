@@ -25,7 +25,7 @@ function createNav(){
     homeButton.classList.add('button-nav');
     homeButton.textContent = 'Home';
     homeButton.addEventListener('click', (e) => {
-        if (e.target.classList.contains(active)) return;
+        if (e.target.classList.contains('active')) return;
         setActiveButton(homeButton);
         loadHome();
     });
@@ -35,9 +35,9 @@ function createNav(){
     menuButton.classList.add('button-nav');
     menuButton.textContent = 'Menu';
     menuButton.addEventListener('click', (e) => {
-        if (e.target.classList.containts('active')) return;
+        if (e.target.classList.contains('active')) return;
         setActiveButton(menuButton);
-        leadMenu();
+        loadMenu();
     });
 
     //CONTACT BUTTON
@@ -84,11 +84,8 @@ function createFooter(){
     const copyright = document.createElement('p');
     copyright.textContent = `Copyright © ${new Date().getFullYear()} chelsea leonhardt`;
 
-    const githubLink = document.createElement('a');
-    githubLink.href = 'https://github.com/locustSpawning';
 
     footer.appendChild(copyright);
-    footer.appendChild(githubLink);
 
     return footer;
 }

@@ -4,13 +4,13 @@ function createHome(){
     home.classList.add('home');
 
     const cookieImage = document.createElement('img');
-    cookieImage.src = 'images2/macarons.jpg';
+    cookieImage.src = 'images2/tea-cup.jpg';
     cookieImage.alt = 'Macarons';
 
     home.appendChild(createParagraph('Authenic French bakery ~ made with care'));
     home.appendChild(cookieImage);
-    home.appendChild(createParagraph('Hours<br>Thursday-Saturday<br>11am-5pm<br>Sundays-Private Events'));
-    home.appendChild(createParagraph('Location<br>La Mademoiselle Macaron<br>41 S Main Street<br>Mullica Hill, NJ 08062'));
+    home.appendChild(createParagraph('<strong>Hours</strong><br>Thursday-Saturday<br>11am-5pm<br>Sundays-Private Events'));
+    home.appendChild(createParagraph('<strong>Location</strong><br>La Mademoiselle Macaron<br>41 S Main Street<br>Mullica Hill, NJ 08062'));
 
     return home;
 }
